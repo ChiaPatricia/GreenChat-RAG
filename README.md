@@ -54,7 +54,7 @@ We are actively exploring the following enhancements:
 - **Multimodal Data Integration:** Incorporate geospatial, time-series, and visual data sources.
 - **Distributed Indexing:** Improve scalability and responsiveness in large-scale deployments.
 
-## Contributing
+## Contribution
 
 We welcome contributions! If you wish to propose a major change, please open an issue first so we can discuss it. For smaller fixes or improvements, feel free to submit a pull request directly.
 
