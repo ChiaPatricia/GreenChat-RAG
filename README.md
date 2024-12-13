@@ -1,58 +1,60 @@
 # GreenChat-RAG
 
-### An Environmental Decision Support RAG System
+### Expert-Level Environmental Decision Support
 
-GreenChat is a sophisticated Retrieval-Augmented Generation (RAG) system designed to provide expert-level environmental decision support. By combining advanced dense vector retrieval with graph-based re-ranking, GreenChat delivers contextually grounded, scientifically accurate responses to complex environmental queries.
+GreenChat is a Retrieval-Augmented Generation (RAG) system specifically designed to provide informed, context-rich assistance for complex environmental decision-making. By integrating dense vector retrieval with a graph-based re-ranking mechanism, it delivers responses that are both scientifically accurate and contextually relevant to environmental queries.
 
-## About
+## Overview
 
-This project was developed as a final project for DS5983 Large Language Models at Northeastern University. It addresses the growing need for specialized AI systems in environmental decision-making by integrating domain-specific knowledge with state-of-the-art language models.
+Developed as a final project for the DS5983 Large Language Models course at Northeastern University, GreenChat addresses the growing need for specialized AI solutions in environmental science and policy. The system employs a two-stage retrieval strategy—first using embedding-based semantic search, then refining results through a knowledge graph—to ensure that output is both precise and grounded in established environmental domains.
 
-GreenChat employs a two-stage retrieval framework that leverages both embedding-based semantic representations and a graph-structured knowledge model. At its core, the system uses a 4-bit quantized Mistral-7B model, optimized for efficient, high-quality response generation while maintaining computational efficiency.
+At its core, GreenChat utilizes a 4-bit quantized Mistral-7B model, striking an optimal balance between efficiency and response quality. This approach ensures that resource constraints need not compromise the depth or accuracy of environmental insights.
 
 ## Dataset
 
-The GREEN dataset forms the foundation of our system, carefully curated from five distinct environmental categories:
-- Global Climate and Weather
-- Renewable Energy
-- Environmental Protection
-- Environmental Economics
-- Natural Technologies
+The foundation of GreenChat is the GREEN dataset, curated from five distinct environmental categories:
 
-Each category (except Natural Technologies) contains 1,000 balanced samples, ensuring comprehensive coverage across environmental domains.
+- **Global Climate and Weather**  
+- **Renewable Energy**  
+- **Environmental Protection**  
+- **Environmental Economics**  
+- **Natural Technologies**
+
+Each major category (except for Natural Technologies) includes 1,000 balanced samples, providing a broad, representative base of environmental knowledge.
 
 ## Requirements
 
-- NVIDIA L4 GPU or equivalent
-- Google Colab environment
+- An NVIDIA L4 GPU or equivalent environment (e.g., Google Colab)
 - Python 3.x
-- Key dependencies:
-  ```
-  sentence-transformers
-  faiss-cpu
-  networkx>=2.8.4
-  transformers
-  torch
-  ```
 
-## Future Development
+**Key Dependencies:**
 
-We are actively working on several enhancements:
-- Implementation of dynamic knowledge graph updates
-- Enhanced concept extraction capabilities
-- Extended multilingual support
-- Integration of multimodal data
-- Development of distributed indexing systems
+sentence-transformers
+faiss-cpu
+networkx>=2.8.4
+transformers
+torch
+
+## Future Directions
+
+We are actively exploring the following enhancements:
+
+- **Dynamic Knowledge Graph Updates:** Continually integrate new research, policies, and environmental data.
+- **Advanced Concept Extraction:** Employ domain-adapted NER models and improved keyword matching.
+- **Multilingual Capabilities:** Expand support to multiple languages for broader, more inclusive decision support.
+- **Multimodal Data Integration:** Incorporate geospatial, time-series, and visual data sources.
+- **Distributed Indexing:** Improve scalability and responsiveness in large-scale deployments.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+We welcome contributions! If you wish to propose a major change, please open an issue first so we can discuss it. For smaller fixes or improvements, feel free to submit a pull request directly.
 
 ## Acknowledgments
 
-- Northeastern University, Roux Institute
-- DS5983 Large Language Models course instructors and peers
-- The open-source AI community for their invaluable tools and resources
+- **Northeastern University, Roux Institute:** For providing the academic environment that nurtured this project.
+- **DS5983 Large Language Models Instructors and Peers:** For their valuable guidance and feedback.
+- **Open-Source AI Community:** For the tools, resources, and collaborations that made this work possible.
 
 ---
-*Note: This project is part of academic coursework and is intended for educational purposes.*
+
+*Note: This project was developed for academic and educational purposes.*
