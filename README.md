@@ -6,9 +6,12 @@ GreenChat is a Retrieval-Augmented Generation (RAG) system specifically designed
 
 ## Overview
 
-Developed as a final project for the DS5983 Large Language Models course at Northeastern University, GreenChat addresses the growing need for specialized AI solutions in environmental science and policy. The system employs a two-stage retrieval strategy—first using embedding-based semantic search, then refining results through a knowledge graph—to ensure that output is both precise and grounded in established environmental domains.
+GreenChat was developed as my final project of the DS5983 Large Language Models course at Northeastern University. It is designed to help users make informed environmental decisions by providing accurate, context-rich answers. To achieve this, GreenChat uses a two-step process:
 
-At its core, GreenChat utilizes a 4-bit quantized Mistral-7B model, striking an optimal balance between efficiency and response quality. This approach ensures that resource constraints need not compromise the depth or accuracy of environmental insights.
+1. **Initial Retrieval:** It searches a large dataset of environmental information using dense vector embeddings.
+2. **Refinement with a Knowledge Graph:** It then applies a knowledge graph to rank and refine the results based on how concepts relate to each other.
+
+For generating answers, GreenChat relies on a quantized Mistral-7B model. Quantization keeps the system efficient without reducing the quality of responses, making it practical to run on limited computing resources.
 
 ## Dataset
 
