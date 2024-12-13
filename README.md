@@ -20,11 +20,11 @@ GreenChat then synthesizes final answers with a quantized Mistral-Instruct 7B mo
 
 The foundation of GreenChat is the GREEN dataset, curated from five distinct environmental categories:
 
-- **Global Climate and Weather (1,000 samples)**  
-- **Renewable Energy (1,000 samples)**  
-- **Environmental Protection (1,000 samples)**  
-- **Environmental Economics (1,000 samples)**  
-- **Natural Technologies (57 samples)**
+- Global Climate and Weather (1,000 samples)
+- Renewable Energy (1,000 samples) 
+- Environmental Protection (1,000 samples)  
+- Environmental Economics (1,000 samples)  
+- Natural Technologies (57 samples)
 
 Each major category (except for Natural Technologies) includes 1,000 balanced samples, providing a broad, representative base of environmental knowledge.
 
