@@ -2,16 +2,17 @@
 
 ### Expert-Level Environmental Decision Support
 
-GreenChat is a Retrieval-Augmented Generation (RAG) system specifically designed to provide informed, context-rich assistance for complex environmental decision-making. By integrating dense vector retrieval with a graph-based re-ranking mechanism, it delivers responses that are both scientifically accurate and contextually relevant to environmental queries.
+GreenChat is a Retrieval-Augmented Generation (RAG) system built to deliver detailed, policy-relevant, and scientifically sound answers to complex environmental inquiries. By pairing dense vector retrieval with a graph-based re-ranking layer, GreenChat goes beyond surface-level results to provide responses grounded in the intricate relationships across environmental domains.
 
 ## Overview
 
-GreenChat was developed as my final project of the DS5983 Large Language Models course at Northeastern University. It is designed to help users make informed environmental decisions by providing accurate, context-rich answers. To achieve this, GreenChat uses a two-step process:
+GreenChat is developed as a final project in the DS5983 Large Language Models course at Northeastern University. It aims to help users navigate the complexities of environmental decision-making. The system works in two stages:
 
-1. **Initial Retrieval:** It searches a large dataset of environmental information using dense vector embeddings.
-2. **Refinement with a Knowledge Graph:** It then applies a knowledge graph to rank and refine the results based on how concepts relate to each other.
+1. **Initial Retrieval:** Quickly identifies a set of relevant documents using dense vector embeddings.
+2. **Graph-Based Refinement:** Re-ranks these results through a semantic knowledge graph that highlights key domain relationships.
 
-For generating answers, GreenChat relies on a quantized Mistral-7B model. Quantization keeps the system efficient without reducing the quality of responses, making it practical to run on limited computing resources.
+GreenChat then synthesizes final answers with a quantized Mistral-Instruct 7B model, ensuring efficient inference without sacrificing accuracy or depth. This approach keeps computational requirements manageable, enabling real-world usability even on limited hardware.
+
 
 ## Dataset
 
