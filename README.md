@@ -1,5 +1,7 @@
 # GreenChat-RAG
 
+
+
 ### Expert-Level Environmental Decision Support
 
 GreenChat is a Retrieval-Augmented Generation (RAG) system built to deliver detailed, policy-relevant, and scientifically sound answers to complex environmental inquiries. By pairing dense vector retrieval with a graph-based re-ranking layer, GreenChat goes beyond surface-level results to provide responses grounded in the intricate relationships across environmental domains.
@@ -18,26 +20,29 @@ GreenChat then synthesizes final answers with a quantized Mistral-Instruct 7B mo
 
 The foundation of GreenChat is the GREEN dataset, curated from five distinct environmental categories:
 
-- **Global Climate and Weather**  
-- **Renewable Energy**  
-- **Environmental Protection**  
-- **Environmental Economics**  
-- **Natural Technologies**
+- **Global Climate and Weather (1,000 samples)**  
+- **Renewable Energy (1,000 samples)**  
+- **Environmental Protection (1,000 samples)**  
+- **Environmental Economics (1,000 samples)**  
+- **Natural Technologies (57 samples)**
 
 Each major category (except for Natural Technologies) includes 1,000 balanced samples, providing a broad, representative base of environmental knowledge.
+
+
+## Model
+The model is available on Hugging Face:
+
+- Model Name: `Jiaaaaaaax/greenchat-20241211`
 
 ## Requirements
 
 - An NVIDIA L4 GPU or equivalent environment (e.g., Google Colab)
-- Python 3.x
-
-**Key Dependencies:**
-
-sentence-transformers
-faiss-cpu
-networkx>=2.8.4
-transformers
-torch
+- Python 3.8+
+- PyTorch 1.9+
+- Transformers 4.21+
+- FAISS 1.7.0
+- NetworkX 2.8.4
+- Sentence-Transformers
 
 ## Future Directions
 
